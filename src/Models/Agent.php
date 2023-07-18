@@ -7,7 +7,7 @@ use Auth;
 
 class Agent extends User
 {
-    protected $table = 'users';
+    protected $table = 'contacts';
 
     /**
      * list of all agents and returning collection.
