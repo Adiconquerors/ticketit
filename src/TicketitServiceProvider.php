@@ -26,7 +26,7 @@ class TicketitServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (!Schema::hasTable('migrations')) {
+        if (config('app.db_database') != '') {
             // Database isn't installed yet.
             return;
         }
